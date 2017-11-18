@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+	<head>
+		<meta charset = "UTF-8">
+		<title>Home</title>
+		<link rel = "stylesheet" type = "text/css"  href = "home.css" />
+
+		<style>
+		input, select {
+    width: 10%;
+    padding: 5px 5px;
+    margin: 2px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 10%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+form{
+	align:"center";
+}
+</style>
+	</head>
+	<body>
+		<div id="header">
+			<div class="topnav" id="myTopnav">
+				<div class="links">
+					<a href="#about">About</a>				
+					<a href="#forum">Forum</a>
+					<a href="#dashboard">Dashboard</a>
+					<a href="./home.html">Home</a>
+					
+				</div>
+				<div class="drop" id="main">
+					<a href="#" class="icon" onclick="openSideNav()">&#9776;</a>
+				</div> 
+				<a href="./profile.html">
+					<img src="./img/circle.png" alt = "Profile"/>
+				</a>
+				
+			</div>
+
+			<div id="mySidenav" class="sidenav">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeSideNav()">&times;</a>
+				<img src="./img/circle.png" alt = "Profile"/>
+				<p>Sneha Kannan</p>
+				<a href="./profile.html">Profile</a>
+				<a href="#">Notifications</a>
+				<a href="#">My Projects</a>
+				<a href="#">Progress</a>
+			</div>
+		</div>
+		<div id="content">
+			<div class="projectTitle">
+				<p>
+					Project Management System
+				</p>
+			</div>
+			<p id="log"> LOGIN </p>
+			<div id="f">
+			<form action="login_info.php" method="post" align="center" text-align="left">
+			
+		
+		UserEmail:
+		<input type="email" name="mail" value="example@gmail.com"/><br/>
+		<br/>
+		Password:
+		<input type="password" name="pass" />
+		<br/>
+		<br/>
+		<input type="submit" onclick="login()" value="LOGIN" name="submit" /><pre>   </pre>
+		
+		<input type="reset" value="RESET" name="reset" /><br/>
+		</form>
+		</div>
+		</div>
+		<div class="footer">
+			<p id="copyright">
+				&#169Copyrights BMS College of Engineering
+			</p>
+			<p id="dept">
+				Dept. of ISE
+			</p>
+		</div>
+		<script type = "text/javascript" src="home.js"></script>
+	</body>
+</html>

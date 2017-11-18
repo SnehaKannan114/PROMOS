@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+	<head>
+		<meta charset = "UTF-8">
+		<title>Home</title>
+		<link rel = "stylesheet" type = "text/css"  href = "home.css" />
+
+		
+	</head>
+	<body>
+		<div id="header">
+			<div class="topnav" id="myTopnav">
+				<div class="links">
+					<a href="#about">About</a>				
+					<a href="#forum">Forum</a>
+					<a href="#dashboard">Dashboard</a>
+					<a href="./home.html">Home</a>
+					
+				</div>
+				
+				
+			</div>
+
+			<div id="mySidenav" class="sidenav">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeSideNav()">&times;</a>
+				<img src="./img/circle.png" alt = "Profile"/>
+				<p>Sneha Kannan</p>
+				<a href="./profile.html">Profile</a>
+				<a href="#">Notifications</a>
+				<a href="#">My Projects</a>
+				<a href="#">Progress</a>
+			</div>
+		</div>
+		<div id="content">
+			<div class="projectTitle">
+				<p >
+					<h1>Project Management System </h1>
+				</p>
+				<p>
+				<h2> STUDENT REGISTERATION </h2> </p>
+			</div>
+			<div id="f">
+			<form action="student_info.php" method="post" align="center" text-align="left">
+			
+		First name :<input type="text" maxlength="20" name="fname" />
+		<br/><br/>Last name: 
+		<input type="text" maxlength="20" name="lname" />
+		<br/>
+		<br/>
+		USN:
+		<input type="text" maxlength="10" name="usn" /><br/>
+		<br/>
+		Department:
+		<input type="text" maxlength="25" name="dept" /><br/>
+		<br/>
+		Email:
+		<input type="email" name="mail" /><br/><br/>
+		Phone Number:
+		<input type="text" pattern="[789][0-9]{9}" maxlength="10" name="phone"/>
+		<br/>
+		<br/>
+		Password:
+		<input type="password" id="txtNewPassword" name="pass" maxlength="15"  />
+		<br/>
+		<br/>
+		
+		
+		<input type="submit" onclick="home.html" value="submit" name="submit" /><br/>
+		<br/>
+		<input type="reset" value="RESET" name="reset" /><br/>
+		</form>
+		</div>
+		</div>
+		<div class="footer">
+			<p id="copyright">
+				&#169Copyrights BMS College of Engineering
+			</p>
+			<p id="dept">
+				Dept. of ISE
+			</p>
+		</div>
+		<script type = "text/javascript" src="home.js"></script>
+	</body>
+</html>
