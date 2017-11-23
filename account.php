@@ -1,7 +1,7 @@
 <?php 
 session_start();
 if($_SESSION['logged'] == true){ 
-    echo $_SESSION["username"];
+  //  echo $_SESSION["username"];
     //echo '<a href="logout.php"><span>Logout</span></a></li>';
 }
 else {
@@ -24,6 +24,7 @@ else {
 					<a href="#forum">Forum</a>
 					<a href="#dashboard">Dashboard</a>
 					<a href="./home.html">Home</a>
+					<a href="http://localhost/myprojects/working_php_code_promas/logout.php?logout=1">LOGOUT</a>
 					
 				</div>
 				<div class="drop" id="main">
